@@ -1,0 +1,158 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "name": "jobs",
+                    "type": "int32"
+                },
+                {
+                    "name": "cost",
+                    "type": "float32"
+                },
+                {
+                    "name": "completion",
+                    "type": "string"
+                },
+                {
+                    "name": "id",
+                    "type": "int32"
+                },
+                {
+                    "name": "image",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "downvote",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "int32"
+                },
+                {
+                    "name": "sender",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "erase",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "int32"
+                }
+            ]
+        },
+        {
+            "name": "proposal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "name"
+                },
+                {
+                    "name": "title",
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "name": "jobs",
+                    "type": "int32"
+                },
+                {
+                    "name": "cost",
+                    "type": "float32"
+                },
+                {
+                    "name": "completion",
+                    "type": "string"
+                },
+                {
+                    "name": "image",
+                    "type": "string"
+                },
+                {
+                    "name": "id",
+                    "type": "int32"
+                },
+                {
+                    "name": "votes",
+                    "type": "int32"
+                }
+            ]
+        },
+        {
+            "name": "upvote",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "int32"
+                },
+                {
+                    "name": "sender",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "downvote",
+            "type": "downvote",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "erase",
+            "type": "erase",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "upvote",
+            "type": "upvote",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "proposals",
+            "type": "proposal",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
